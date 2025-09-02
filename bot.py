@@ -3,9 +3,9 @@ import asyncio, os
 
 # ==== CONFIG from environment variable  ====
 api_id = int(os.getenv("API_ID"))          # <- Get from https://my.telegram.org
-api_hash = int(os.getenv("API_HASH"))     
-phone = int(os.getenv("PHONE"))        # <- Your Telegram phone number
-TARGET_CHANNEL = int(os.getenv("TARGET_CHANNEL"))       # e.g. "elonmuskcoin" (without @)
+api_hash = os.getenv("API_HASH")          # long string
+phone = os.getenv("PHONE")        # <- Your Telegram phone number
+TARGET_CHANNEL = os.getenv("TARGET_CHANNEL")      # e.g. "elonmuskcoin" (without @)
 
 # ==== FILE STORAGE ====
 KEYWORD_FILE = "keywords.txt"
