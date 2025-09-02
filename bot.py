@@ -44,7 +44,7 @@ async def command_handler(event):
         if word and word not in keywords:
             keywords.append(word)
             save_keywords(keywords)
-            await event.respond(f"✅ Added keyword: {word}")
+            await event.respond(f"✅ Added new keyword: {word}")
     elif text.startswith("-"):
         word = text[1:].strip()
         if word in keywords:
